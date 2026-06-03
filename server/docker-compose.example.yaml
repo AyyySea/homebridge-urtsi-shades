@@ -1,0 +1,34 @@
+# Example docker-compose for the URTSI HTTP control server.
+# Adjust paths and device names for your environment.
+
+services:
+  urtsi:
+    image: python:3.14-slim
+    container_name: urtsi-control
+    restart: always
+
+    # Pass through the USB-serial device. The path on the LEFT is the host path,
+    # the path on the RIGHT is the path inside the container (which urtsi_server.py expects).
+    # Alternative (more stable) form using the udev by-id path:
+    #   - /dev/serial/by-id/usb-FTDI_USB_Serial_Converter_*-if00-port0:/dev/ttyUSB0
+    devices:
+      - /dev/ttyUSB0:/dev/ttyUSB0
+
+    # Expose the HTTP API on host port 8181.
+    ports:
+      - "8181:8181"
+
+    # Mount the server/ directory of this repo into the container as /app.
+    # Change this path to wherever you've cloned the repo on the host.
+    volumes:
+      - ./server:/app
+
+    working_dir: /app
+
+    # Optional: tune the inter-command delay. Default is 500ms.
+    # Lower values speed up bulk operations but risk dropped commands.
+    environment:
+      URTSI_DELAY_MS: "500"
+
+    # Install pyserial then run the server.
+    command: bash -c "pip install pyserial && python urtsi_server.py"

@@ -1,0 +1,174 @@
+{
+  "platform": "URTSIShades",
+  "name": "URTSI Shades",
+  "host": "http://127.0.0.1:8181",
+  "transitionTime": 5000,
+  "shades": [
+    {
+      "name": "Shade 01-01",
+      "urtsi": "01",
+      "channel": "01"
+    },
+    {
+      "name": "Shade 01-02",
+      "urtsi": "01",
+      "channel": "02"
+    },
+    {
+      "name": "Shade 01-03",
+      "urtsi": "01",
+      "channel": "03"
+    },
+    {
+      "name": "Shade 01-04",
+      "urtsi": "01",
+      "channel": "04"
+    },
+    {
+      "name": "Shade 01-05+06",
+      "channels": [
+        {
+          "urtsi": "01",
+          "channel": "05"
+        },
+        {
+          "urtsi": "01",
+          "channel": "06"
+        }
+      ]
+    },
+    {
+      "name": "Shade 01-07+08",
+      "channels": [
+        {
+          "urtsi": "01",
+          "channel": "07"
+        },
+        {
+          "urtsi": "01",
+          "channel": "08"
+        }
+      ]
+    },
+    {
+      "name": "Shade 01-09",
+      "urtsi": "01",
+      "channel": "09"
+    },
+    {
+      "name": "Shade 01-10",
+      "urtsi": "01",
+      "channel": "10"
+    },
+    {
+      "name": "Shade 01-11",
+      "urtsi": "01",
+      "channel": "11"
+    },
+    {
+      "name": "Shade 01-12",
+      "urtsi": "01",
+      "channel": "12"
+    },
+    {
+      "name": "Shade 01-13",
+      "urtsi": "01",
+      "channel": "13"
+    },
+    {
+      "name": "Shade 01-14",
+      "urtsi": "01",
+      "channel": "14"
+    },
+    {
+      "name": "Shade 01-15",
+      "urtsi": "01",
+      "channel": "15"
+    },
+    {
+      "name": "Shade 01-16",
+      "urtsi": "01",
+      "channel": "16"
+    },
+    {
+      "name": "Shade 02-01",
+      "urtsi": "02",
+      "channel": "01"
+    },
+    {
+      "name": "Shade 02-02",
+      "urtsi": "02",
+      "channel": "02"
+    },
+    {
+      "name": "Shade 02-03",
+      "urtsi": "02",
+      "channel": "03"
+    },
+    {
+      "name": "Shade 02-04",
+      "urtsi": "02",
+      "channel": "04"
+    },
+    {
+      "name": "Shade 02-05",
+      "urtsi": "02",
+      "channel": "05"
+    },
+    {
+      "name": "Shade 02-06",
+      "urtsi": "02",
+      "channel": "06"
+    },
+    {
+      "name": "Shade 02-07",
+      "urtsi": "02",
+      "channel": "07"
+    },
+    {
+      "name": "Shade 02-08",
+      "urtsi": "02",
+      "channel": "08"
+    },
+    {
+      "name": "Shade 02-09",
+      "urtsi": "02",
+      "channel": "09"
+    },
+    {
+      "name": "Shade 02-10",
+      "urtsi": "02",
+      "channel": "10"
+    },
+    {
+      "name": "Shade 02-11",
+      "urtsi": "02",
+      "channel": "11"
+    },
+    {
+      "name": "Shade 02-12",
+      "urtsi": "02",
+      "channel": "12"
+    },
+    {
+      "name": "Shade 02-13",
+      "urtsi": "02",
+      "channel": "13"
+    },
+    {
+      "name": "Shade 02-14",
+      "urtsi": "02",
+      "channel": "14"
+    },
+    {
+      "name": "Shade 02-15",
+      "urtsi": "02",
+      "channel": "15"
+    },
+    {
+      "name": "Shade 02-16",
+      "urtsi": "02",
+      "channel": "16"
+    }
+  ]
+}

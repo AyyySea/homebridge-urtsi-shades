@@ -1,0 +1,19 @@
+{
+  "name": "homebridge-urtsi-shades",
+  "version": "1.0.0",
+  "description": "Homebridge plugin for Somfy URTSI II shades. Exposes each shade as a HomeKit WindowCovering with binary up/down (one-way RTS) and a native Stop button during transit. Supports combined-channel shades.",
+  "license": "MIT",
+  "main": "index.js",
+  "engines": {
+    "homebridge": ">=1.6.0",
+    "node": ">=14.0.0"
+  },
+  "keywords": [
+    "homebridge-plugin",
+    "somfy",
+    "urtsi",
+    "shades",
+    "rts",
+    "window-covering"
+  ]
+}

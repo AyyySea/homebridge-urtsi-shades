@@ -1,0 +1,37 @@
+{
+  "pluginAlias": "URTSIShades",
+  "pluginType": "platform",
+  "singular": true,
+  "headerDisplay": "Each shade exposes as a HomeKit WindowCovering tile with a slider (snaps to fully open / fully closed since RTS is one-way) and a native Stop button that appears during the transit window. A 'shade' is either a single URTSI channel, or multiple channels controlled together via a 'channels' array.",
+  "schema": {
+    "type": "object",
+    "properties": {
+      "name":           { "title": "Platform Name", "type": "string", "default": "URTSI Shades", "required": true },
+      "host":           { "title": "URTSI HTTP Server URL", "type": "string", "default": "http://127.0.0.1:8181", "required": true },
+      "transitionTime": { "title": "Transition Time (ms)", "type": "integer", "default": 5000 },
+      "shades": {
+        "title": "Shades",
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "name":     { "title": "Name", "type": "string", "required": true },
+            "urtsi":    { "title": "URTSI Unit (single-channel shade)", "type": "string" },
+            "channel":  { "title": "Channel (single-channel shade)", "type": "string" },
+            "channels": {
+              "title": "Channels (combined shade)",
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "urtsi":   { "title": "URTSI Unit", "type": "string", "required": true },
+                  "channel": { "title": "Channel", "type": "string", "required": true }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

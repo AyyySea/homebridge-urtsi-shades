@@ -1,0 +1,9 @@
+node_modules/
+__pycache__/
+*.pyc
+*.bak
+*.swp
+.DS_Store
+.idea/
+.vscode/
+npm-debug.log
